@@ -16,7 +16,7 @@
 
         header {
             background-color: #3498db;
-            padding: 20px;
+            padding: 22px;
             text-align: center;
         }
 
