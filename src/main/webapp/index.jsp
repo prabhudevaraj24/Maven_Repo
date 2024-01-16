@@ -51,7 +51,7 @@
 
 <body>
     <header>
-        <h1>Cachey Website</h1>
+        <h1>Welcome Website</h1>
     </header>
 
     <div class="main-content">
@@ -72,7 +72,7 @@
     </div>
 
     <footer>
-        &copy; 2024 Cachey Website. All rights reserved.
+        &copy; 2024 Welcome Website. All rights reserved.
     </footer>
 </body>
 
