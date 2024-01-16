@@ -24,10 +24,19 @@ pipeline {
 		}
         stage('Build'){
             steps{
-                bat "mvn package"
+                bat "mvn clean package"
 				
             }
+            post{
+			success echo "Archiving the artifacts"
+			archiveArtifacts artifacts:'**/target/*.war'
+			}
 		
+        } stage('Deploy to Tomcat'){
+            steps{
+                deploy adapters: [tomcat8(credentialsId: 'Tomcat_Cred', path: '', url: 'http://localhost:8081/')], contextPath: 'C:\\Rockwell\\PO10.4.107225\\tomcat\\webapps', war: '**/*.war'
+            }
+            
         }
     }
   post{
