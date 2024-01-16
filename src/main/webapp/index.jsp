@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Website 1</title>
+    <title>My Attractive Website</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -16,29 +16,38 @@
 
         header {
             background-color: #3498db;
-            padding: 22px;
+            padding: 20px;
             text-align: center;
-        }
-
-        h1 {
             color: #fff;
         }
 
-        .main-content {
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #ecf0f1;
+            color: #333;
+        }
+
+        .content {
             padding: 20px;
             text-align: center;
         }
 
-        .feature-box {
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
         footer {
-            background-color: #2c3e50;
+            background-color: #333;
             padding: 10px;
             text-align: center;
             color: #fff;
@@ -51,29 +60,11 @@
 
 <body>
     <header>
-        <h1>Welcome Website</h1>
+        <h1>My Attractive Website</h1>
     </header>
 
-    <div class="main-content">
-        <div class="feature-box">
-            <h2>Modern Design</h2>
-            <p>Stay up-to-date with the latest design trends.</p>
-        </div>
-
-        <div class="feature-box">
-            <h2>Responsive Layout</h2>
-            <p>Your website will look great on any device.</p>
-        </div>
-
-        <div class="feature-box">
-            <h2>Easy Customization</h2>
-            <p>Customize and personalize your website effortlessly.</p>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2024 Welcome Website. All rights reserved.
-    </footer>
-</body>
-
-</html>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</
