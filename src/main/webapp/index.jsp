@@ -1,70 +1,35 @@
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Devops Website</title>
+    <title>Buggy HTML</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
+            font-family: Arial, sans-serif;
         }
 
-        header {
-            background-color: #3498db;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
+        h1 {
+            color: blue;
         }
 
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .welcome-section {
-            text-align: center;
-            padding: 50px;
-            background-color: #ecf0f1;
-            color: #333;
-        }
-
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        p {
+            font-size: 16px;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <h1>My First Devops Website</h1>
-    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</
+    <h1>Buggy HTML Page</h1>
+
+    <p>This is a paragraph with mismatched tags that may cause rendering issues<p>
+
+    <img src="broken_image.jpg" alt="Broken Image">
+
+    <script>
+        // This script has a deliberate error
+        document.getElementById('nonexistent-element').innerHTML = 'This element does not exist';
+    </script>
+
+</body>
+</html>
